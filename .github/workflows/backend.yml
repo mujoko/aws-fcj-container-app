@@ -1,9 +1,7 @@
 name: app-cicd
 
 on:
-  push:
-    branches: [ "main" ]
-  workflow_dispatch:
+  workflow_call:
 
 env:
   AWS_REGION: ap-southeast-1                  # change as needed
